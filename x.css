@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(26,26,26,1) 100%);
+    color: #c0c0c0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    max-width: 350px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #e0e0e0;
+}
+
+.description, .usage {
+    margin: 10px 0;
+    font-size: 1em;
+}
+
+.highlight {
+    color: #b3b3ff;
+}
+
+.buttons {
+    margin: 20px 0;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    background: #333;
+    border: 1px solid #444;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    color: #e0e0e0;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #444;
+}
+
+.btn span {
+    display: block;
+    font-size: 0.8em;
+    color: #999;
+}
+
+.discord {
+    display: inline-block;
+    margin-top: 20px;
+    color: #7289da;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.discord:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    margin-top: 30px;
+    font-size: 0.8em;
+}
+
+.footer a {
+    color: #999;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
