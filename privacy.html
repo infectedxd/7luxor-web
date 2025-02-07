@@ -1,34 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - 7Luxor Bot</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - 7Luxor Bot</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <h1>Privacy Policy</h1>
-        <p>This Privacy Policy explains how information is collected, used, and disclosed by the 7Luxor</p>
-        
-        <h2>Information Collection and Use</h2>
-		<ul>
-			<li>We collect certain information about users of the 7Luxor, including but not limited to user IDs, server IDs, and usage data</li>
-			<li>This information is used to provide and improve the service, as well as to monitor and analyze usage patterns</li>
-		</ul>	
-        
-        <h2>Information Sharing and Disclosure</h2>
-        <ul>
-			<li>We do not share or disclose any personal information collected through the 7Luxor, except as described in this Privacy Policy or with user consent</li>
-			<li>Aggregate, anonymized data may be shared for analytical purposes or to improve the service</li>
-        </ul>
-        <h2>Changes to This Privacy Policy</h2>
-		<ul>
-			<li>We reserve the right to update or change this Privacy Policy at any time</li>
-			<li>Any changes will be effective immediately upon posting the updated Privacy Policy on the 7Luxor support server</li>
-		</ul>
-    </div>
-    <script src="scriptjs"></script>
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <p><strong>Last Updated And Effective Since:</strong> 2025-01-08 (8th of January 2025)</p>
+    <p>
+      Any information we collect is not used in any malicious manner. If anything shown seems misleading, please contact us at 
+      <a href="mailto:7luxorbot@proton.me">7luxorbot@proton.me</a>.
+    </p>
+
+    <h2>Data Collection</h2>
+    <p>The 7Luxor Bot collects the following data:</p>
+    <ul>
+      <li>Guild IDs</li>
+      <li>Guild Names</li>
+      <li>Channel IDs</li>
+      <li>Role IDs</li>
+      <li>User IDs</li>
+      <li>Message Timestamps</li>
+      <li>Message IDs</li>
+      <li>Past Avatars</li>
+      <li>Nicknames and Usernames</li>
+      <li>
+        Message content when a command is invoked (stored for a maximum of 14 days) or when arguments are passed for commands
+      </li>
+      <li>
+        Last deleted message content (stored for a maximum of 2 hours or less)
+      </li>
+      <li>
+        Last message edit history (stored for a maximum of 2 hours or less)
+      </li>
+      <li>
+        Last Emoji Reaction History (stored for a maximum of 2 hours or less)
+      </li>
+    </ul>
+
+    <h2>Analytics and Performance Monitoring</h2>
+    <p>We collect anonymous usage data and performance metrics to improve our service quality and user experience. This includes:</p>
+    <ul>
+      <li>Command usage statistics and patterns</li>
+      <li>Bot performance metrics (response times, system resource usage)</li>
+      <li>Feature adoption rates</li>
+      <li>Error tracking and debugging information</li>
+      <li>User interaction patterns with bot features</li>
+      <li>Server growth and activity metrics</li>
+      <li>Security incident detection and prevention data</li>
+      <li>Bot configuration changes</li>
+      <li>Command success/failure rates</li>
+    </ul>
+    <p>
+      This data is processed and stored using the PostHog analytics platform and hosted on our servers in Dallas, Texas. We collect this data to:
+    </p>
+    <ul>
+      <li>Improve bot performance and reliability</li>
+      <li>Identify and fix bugs</li>
+      <li>Optimize popular features</li>
+      <li>Detect and prevent abuse</li>
+      <li>Make data-driven decisions about new features</li>
+      <li>Monitor system health and resource usage</li>
+    </ul>
+    <p>The analytics data is:</p>
+    <ul>
+      <li>Pseudonymized (no personally identifiable information)</li>
+      <li>Stored securely with restricted access</li>
+      <li>Retained for a maximum of 30 days</li>
+      <li>Never sold or shared with third parties</li>
+      <li>Used solely for improving our service</li>
+    </ul>
+    <p>
+      You can request information about what analytics data we store by contacting us at 
+      <a href="mailto:7luxorbot@proton.me">7luxorbot@proton.me</a>. While we cannot allow individual users to opt out of analytics collection (as it is essential for service operation and security), we minimize the data collected to only what’s necessary.
+    </p>
+
+    <h2>Usage of Data</h2>
+    <p>
+      When a command is invoked, we store the message content for a maximum of 14 days for debugging purposes. We also store up to 18 entries for edited messages and sniping messages that expire in two hours or less in volatile memory.
+    </p>
+    <p>
+      Additionally, Guild IDs, Channel IDs, Role IDs, User IDs, and Message IDs are stored so that our system can aggregate data.
+    </p>
+    <p>
+      Nickname, Username, and Avatar changes are logged to enable the "namehistory" and "avatarhistory" commands. Users can clear this data themselves at any time.
+    </p>
+    <p>
+      Guild name changes are logged to enable the "gnames" command, and server administrators can clear this data themselves at any time.
+    </p>
+
+    <h2>Information Sharing</h2>
+    <p>
+      We do not sell or expose your information to others, nor do we share it with any third parties.
+    </p>
+
+    <h2>Data Removal</h2>
+    <p>
+      If you would like to request removal of your data from our active systems, please email us at 
+      <a href="mailto:7luxorbot@proton.me">7luxorbot@proton.me</a>. Please note that while we honor deletion requests for our active systems, we may be unable to remove your data from existing backups until they naturally expire according to our retention schedule. Response times may vary and could take up to 7 days.
+    </p>
+
+    <h2>Data Storage and Backups</h2>
+    <p>
+      Our primary data storage is located in Dallas, Texas. For redundancy and disaster recovery, we maintain replicated backups in data centers located in New York, USA, and Falkenstein, Germany.
+    </p>
+    <p>
+      Automated backups are performed every 8 hours (3 times daily) in the UTC timezone. These backups are retained for 7 days before being permanently deleted.
+    </p>
+
+    <h2>Changes to This Privacy Policy</h2>
+    <p>
+      We reserve the right to update or change this Privacy Policy at any time without notice. Continuing to use our services after any changes constitutes your acceptance of the updated Privacy Policy. Note that violation of our terms of service could result in a permanent ban across all our services.
+    </p>
+
+    <p>&copy; 2024 7Luxor Bot. All rights reserved.</p>
+  </div>
+  <!-- Optionally include your script -->
+  <script src="script.js"></script>
 </body>
 </html>
