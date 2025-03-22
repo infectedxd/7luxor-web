@@ -3,27 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ah</title>
+    <title>7luxor</title>
     <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+        * {
             margin: 0;
-            font-family: Arial, sans-serif;
+            padding: 0;
+            box-sizing: border-box;
         }
-        .center-text {
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #0a0a0a;
+            color: #f5f5f5;
+            display: grid;
+            place-items: center;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        .container {
             text-align: center;
-            font-size: 36px;
-            font-weight: bold;
+            max-width: 600px;
+            padding: 2rem;
+        }
+
+        .title {
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
+        }
+
+        .invite-link {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #7fbfff;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            font-weight: 500;
+        }
+
+        .invite-link:hover {
+            background-color: rgba(255, 255, 255, 0.05);
+            transform: translateY(-1px);
+        }
+
+        .note {
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            opacity: 0.6;
+            max-width: 280px;
+            margin-left: auto;
+            margin-right: auto;
         }
     </style>
 </head>
 <body>
-    <div class="center-text">
-        It's a joke. It will rickroll you. <br>
-        <a href="https://discord.com/oauth2/authorize?client_id=1262791824590897253&integration_type=1&scope=applications.commands">(get 7luxor)</a>
+    <div class="container">
+        <div class="title">It's a joke. It will rickroll you</div>
+        <a href="https://discord.com/oauth2/authorize?client_id=1262791824590897253&integration_type=1&scope=applications.commands" class="invite-link">
+            Add to Discord
+        </a>
+        <div class="note">
+            Add the app btw
+        </div>
     </div>
 </body>
+</html>
 </html>
