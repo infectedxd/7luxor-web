@@ -3,31 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donate to 7Luxor</title>
-    <link rel="stylesheet" href="x.css">
+    <title>Donate - 7Luxor</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #0a0a0a;
+            color: #fafafa;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 24px;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, #fff 0%, #a0a0a0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .description {
+            color: #888;
+            font-size: 0.938rem;
+            margin-bottom: 12px;
+            font-weight: 300;
+        }
+
+        .perks {
+            color: #666;
+            font-size: 0.875rem;
+            margin-bottom: 32px;
+            font-weight: 300;
+        }
+
+        .donate-button {
+            display: inline-block;
+            margin-bottom: 48px;
+        }
+
+        .donate-button img {
+            width: 185px;
+            border-radius: 8px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .donate-button:hover img {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 32px rgba(255, 255, 255, 0.1);
+        }
+
+        .footer {
+            padding-top: 24px;
+            border-top: 1px solid #1a1a1a;
+        }
+
+        .footer-nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .footer-nav a {
+            color: #555;
+            text-decoration: none;
+            font-size: 0.813rem;
+            font-weight: 400;
+            transition: color 0.2s ease;
+        }
+
+        .footer-nav a:hover {
+            color: #888;
+        }
+
+        .separator {
+            width: 3px;
+            height: 3px;
+            background: #333;
+            border-radius: 50%;
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.75rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <div class="content">
-            <h1 class="poppins-semibold">Support 7Luxor</h1>
-            <p class="description poppins-light">
-                Your donation helps us improve and maintain the 7Luxor, The minimum donation amount is $1
-            </p>
-            <p class="description poppins-light">
-                Get your donor perks like imagine, ars, and much more!
-            </p>
-            <div class="buttons">
-                <a href="https://oxapay.com/donate/25965684" target="_blank">
-                    <img src="https://app.oxapay.com/media/btn/light-btn.png" style="width: 185px" alt="Donate with OxaPay">
-                </a>
-            </div>
-        </div>
-        <div class="footer poppins-light">
-            <a href="index.html" class="home">Home</a> | <a href="privacy.html" class="policy">Privacy Policy</a> | <a href="terms.html" class="terms">Terms of Service</a>
-        </div>
+        <h1>Support 7Luxor</h1>
+        <p class="description">Your donation helps us improve and maintain the 7Luxor. The minimum donation amount is $1.</p>
+        <p class="perks">Get your donor perks like imagine, ars, and much more!</p>
+
+        <a href="https://oxapay.com/donate/25965684" target="_blank" class="donate-button">
+            <img src="https://app.oxapay.com/media/btn/light-btn.png" alt="Donate with OxaPay">
+        </a>
+
+        <footer class="footer">
+            <nav class="footer-nav">
+                <a href="index.html">Home</a>
+                <span class="separator"></span>
+                <a href="privacy.html">Privacy</a>
+                <span class="separator"></span>
+                <a href="terms.html">Terms</a>
+            </nav>
+        </footer>
     </div>
 </body>
 </html>
