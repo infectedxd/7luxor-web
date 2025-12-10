@@ -4,30 +4,168 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Refund Policy - 7Luxor</title>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #0a0a0a;
+            color: #fafafa;
+            min-height: 100vh;
+            padding: 48px 24px;
+            line-height: 1.7;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #fff 0%, #a0a0a0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .intro {
+            color: #666;
+            font-size: 0.938rem;
+            margin-bottom: 8px;
+            font-weight: 300;
+        }
+
+        .notice {
+            color: #888;
+            font-size: 0.875rem;
+            margin-bottom: 40px;
+            font-weight: 300;
+        }
+
+        h2 {
+            font-size: 1.125rem;
+            font-weight: 500;
+            color: #e0e0e0;
+            margin-top: 32px;
+            margin-bottom: 16px;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        li {
+            color: #999;
+            font-size: 0.875rem;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 4px;
+            height: 4px;
+            background: #333;
+            border-radius: 50%;
+        }
+
+        .footer {
+            margin-top: 64px;
+            padding-top: 24px;
+            border-top: 1px solid #1a1a1a;
+        }
+
+        .footer-nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .footer-nav a {
+            color: #555;
+            text-decoration: none;
+            font-size: 0.813rem;
+            font-weight: 400;
+            transition: color 0.2s ease;
+        }
+
+        .footer-nav a:hover {
+            color: #888;
+        }
+
+        .separator {
+            width: 3px;
+            height: 3px;
+            background: #333;
+            border-radius: 50%;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 32px 20px;
+            }
+
+            h1 {
+                font-size: 1.75rem;
+            }
+
+            h2 {
+                font-size: 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <h1>Refund Policy</h1>
-        <p>Refund Policy for the 7Luxor Premium</p>
-        <p>We ("7luxor", "7luxor Bot", "us", "our") have a strict policy on refunds and will deny you for any refund request for one of the following reasons listed</p>
-        
+        <p class="intro">Refund Policy for the 7Luxor Premium</p>
+        <p class="notice">We ("7luxor", "7luxor Bot", "us", "our") have a strict policy on refunds and will deny you for any refund request for one of the following reasons listed</p>
+
         <h2>No refunds will be issued if:</h2>
         <ul>
             <li>You elude a ban or blacklist issued by using alternative accounts or sending other individuals to make a payment on your behalf without disclosing it</li>
-			<li>You are being disrespectful to 7luxor itself or 7luxor devs along with any support team</li>
-          <li>A premium command or any other feature has been used by you</li>
-          <li>A full 24 hour cycle has progressed since the purchase by you</li>
-          <li>You are a blacklisted user across all of our services</li>
-          <li>You have malicious intentions with your refund</li>
-          <li>You are forging or hiding details</li>
+            <li>You are being disrespectful to 7luxor itself or 7luxor devs along with any support team</li>
+            <li>A premium command or any other feature has been used by you</li>
+            <li>A full 24 hour cycle has progressed since the purchase by you</li>
+            <li>You are a blacklisted user across all of our services</li>
+            <li>You have malicious intentions with your refund</li>
+            <li>You are forging or hiding details</li>
         </ul>
+
         <h2>Changes to the Refund Policy</h2>
         <ul>
             <li>We can update these terms at any time without notice. Continuing to use our services after any changes will mean that you agree with these terms and violation of our terms of service could result in a permanent ban across all of our services.</li>
         </ul>
+
+        <footer class="footer">
+            <nav class="footer-nav">
+                <a href="index.html">Home</a>
+                <span class="separator"></span>
+                <a href="privacy.html">Privacy</a>
+                <span class="separator"></span>
+                <a href="terms.html">Terms</a>
+            </nav>
+        </footer>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>
